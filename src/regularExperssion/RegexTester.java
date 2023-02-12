@@ -28,12 +28,12 @@ public class RegexTester {
      */
     private static String getRegex() {
         System.out.println("Enter regex: ");
-        String regex = scanner.nextLine();
-        while (!validateRegex(regex)) {
+        String regexIn = scanner.nextLine();
+        while (!validateRegex(regexIn)) {
             System.out.println("Invalid regex, enter again: ");
-            regex = scanner.nextLine();
+            regexIn = scanner.nextLine();
         }
-        return regex;
+        return regexIn;
     }
 
     /**
